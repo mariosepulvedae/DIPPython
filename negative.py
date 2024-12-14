@@ -7,15 +7,15 @@ import cv2 as cv
 import numpy as np
 import matplotlib.pyplot as plt
 
-imagenA=cv.imread("brain.jpg")
-imagenA=cv.cvtColor(imagenA, cv.COLOR_BGR2GRAY)
-imagenA=np.asarray(imagenA)
-negative=255-imagenA
+imageA=cv.imread("brain.jpg")
+imageA=cv.cvtColor(imageA, cv.COLOR_BGR2GRAY)
+imageA=np.asarray(imageA)
+negative=255-imageA
 
 
 
 plt.subplot(1,2,1)
-plt.imshow(imagenA,cmap="gray")
+plt.imshow(imageA,cmap="gray")
 plt.xlabel(xlabel="pixels")
 plt.ylabel(ylabel="pixels")
 plt.title(label="Brain tomography")
